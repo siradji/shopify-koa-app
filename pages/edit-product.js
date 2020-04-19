@@ -1,84 +1,84 @@
-import {
-  Card,
-  DisplayText,
-  Form,
-  FormLayout,
-  Layout,
-  Page,
-  PageActions,
-  TextField,
-} from '@shopify/polaris';
-import store from 'store-js';
+// import {
+//   Card,
+//   DisplayText,
+//   Form,
+//   FormLayout,
+//   Layout,
+//   Page,
+//   PageActions,
+//   TextField,
+// } from '@shopify/polaris';
+// import store from 'store-js';
 
-const EditProduct = () => {
-  const [discount, setDiscount] = React.useState('');
-  const [price, setPrice] = React.useState('');
-  const [variantId, setVariant] = React.useState('');
+// const EditProduct = () => {
+//   const [discount, setDiscount] = React.useState('');
+//   const [price, setPrice] = React.useState('');
+//   const [variantId, setVariant] = React.useState('');
 
-  const handleChange = React.useCallback((field) => {
-    (value) => setState(value);
-  }, []);
+//   const handleChange = React.useCallback((field) => {
+//     (value) => setState(value);
+//   }, []);
 
-  const itemToBeConsumed = () => {
-    const item = store.get('item');
-    const price = item.variants.edges[0].node.price;
-    const variantId = item.variants.edges[0].node.id;
-    const discounter = price * 0.1;
-    setPrice(price);
-    setVariant(variantId);
-    return (price - discounter).toFixed(2);
-  };
+//   const itemToBeConsumed = () => {
+//     const item = store.get('item');
+//     const price = item.variants.edges[0].node.price;
+//     const variantId = item.variants.edges[0].node.id;
+//     const discounter = price * 0.1;
+//     setPrice(price);
+//     setVariant(variantId);
+//     return (price - discounter).toFixed(2);
+//   };
 
-  React.useEffect = () => {
-    setDiscount(itemToBeConsumed), [];
-  };
-  return (
-    <Page>
-      <Layout>
-        <Layout.Section>
-          <DisplayText size='large'>{name}</DisplayText>
-          <Form>
-            <Card sectioned>
-              <FormLayout>
-                <FormLayout.Group>
-                  <TextField
-                    prefix='$'
-                    value={price}
-                    disabled={true}
-                    label='Original price'
-                    type='price'
-                  />
-                  <TextField
-                    prefix='$'
-                    value={discount}
-                    onChange={handleChange}
-                    label='Discounted price'
-                    type='discount'
-                  />
-                </FormLayout.Group>
-                <p>This sale price will expire in two weeks</p>
-              </FormLayout>
-            </Card>
-            <PageActions
-              primaryAction={[
-                {
-                  content: 'Save',
-                  onAction: () => {
-                    console.log('submitted');
-                  },
-                },
-              ]}
-              secondaryActions={[
-                {
-                  content: 'Remove discount',
-                },
-              ]}
-            />
-          </Form>
-        </Layout.Section>
-      </Layout>
-    </Page>
-  );
-};
+//   React.useEffect = () => {
+//     setDiscount(itemToBeConsumed), [];
+//   };
+//   return (
+//     <Page>
+//       <Layout>
+//         <Layout.Section>
+//           <DisplayText size='large'>{name}</DisplayText>
+//           <Form>
+//             <Card sectioned>
+//               <FormLayout>
+//                 <FormLayout.Group>
+//                   <TextField
+//                     prefix='$'
+//                     value={price}
+//                     disabled={true}
+//                     label='Original price'
+//                     type='price'
+//                   />
+//                   <TextField
+//                     prefix='$'
+//                     value={discount}
+//                     onChange={handleChange}
+//                     label='Discounted price'
+//                     type='discount'
+//                   />
+//                 </FormLayout.Group>
+//                 <p>This sale price will expire in two weeks</p>
+//               </FormLayout>
+//             </Card>
+//             <PageActions
+//               primaryAction={[
+//                 {
+//                   content: 'Save',
+//                   onAction: () => {
+//                     console.log('submitted');
+//                   },
+//                 },
+//               ]}
+//               secondaryActions={[
+//                 {
+//                   content: 'Remove discount',
+//                 },
+//               ]}
+//             />
+//           </Form>
+//         </Layout.Section>
+//       </Layout>
+//     </Page>
+//   );
+// };
 
-export default EditProduct;
+// export default EditProduct;

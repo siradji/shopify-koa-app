@@ -75,6 +75,8 @@ const ResourceListWithProducts = () => {
                     }
                   />
                 );
+
+                const test = 'test'
                 const price = item.variants.edges[0].node.price;
                 return (
                   <ResourceList.Item
@@ -83,7 +85,7 @@ const ResourceListWithProducts = () => {
                     accessibilityLabel={`View details for ${item.title}`}
                     onClick={() => {
                       store.set('item', item);
-                      redirectToProduct();
+                      // redirectToProduct();
                     }}
                   >
                     <Stack>
