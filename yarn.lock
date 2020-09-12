@@ -1014,12 +1014,12 @@
     lodash "^4.17.4"
     lodash-decorators "^4.3.5"
 
-"@shopify/koa-shopify-auth@^3.1.58":
-  version "3.1.58"
-  resolved "https://registry.yarnpkg.com/@shopify/koa-shopify-auth/-/koa-shopify-auth-3.1.58.tgz#ab202bc61713edd9dfc8cc75f57280abc051ac56"
-  integrity sha512-djHG9Gwyz3DbVj/L0P0+FjFzaS3Nk2KGIlypt6tKbTt1yTFRKQjiP+tXqzcYfUXcnDG+tjJmceXUbadczBjzOg==
+"@shopify/koa-shopify-auth@^3.1.65":
+  version "3.1.68"
+  resolved "https://registry.yarnpkg.com/@shopify/koa-shopify-auth/-/koa-shopify-auth-3.1.68.tgz#4c3a736a0161e2a52901f0ce38f5d72ae2e29598"
+  integrity sha512-WAYGBI2WN/neady3M+sH3E5yvm/RrRLsut48waPtwCc07xcBS3KZ/Q9SKJwFktB6ZQ1CZP6D2orKjwn2AFT2yw==
   dependencies:
-    "@shopify/network" "^1.4.6"
+    "@shopify/network" "^1.5.0"
     koa-compose ">=3.0.0 <4.0.0"
     nonce "^1.0.4"
     safe-compare "^1.1.2"
@@ -1034,10 +1034,10 @@
     koa-better-http-proxy "^0.2.4"
     tslib "^1.9.3"
 
-"@shopify/network@^1.4.6":
-  version "1.4.6"
-  resolved "https://registry.yarnpkg.com/@shopify/network/-/network-1.4.6.tgz#fa2b1b44cb1cf84563ae721625bfc021d29d6b1e"
-  integrity sha512-QMikWQ5gWg70sDnVjwjYmBsqIwUubN41WcLe/CiFO5a1IwAPt4kWuMHY9TC9QVNAYJ3bSW7TtnvoZQOyPIZzNA==
+"@shopify/network@^1.5.0":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@shopify/network/-/network-1.5.0.tgz#6201b6117378466dddf005b7b65ace357698e764"
+  integrity sha512-/y+KgT/sEXXdwDalXAqcsJ0t40M1CzbIuaZ3SlGBuvD+zdYDIXqm2LTkzY51Fi5Yk9RNWtKB+eBQ2owaygQH0Q==
   dependencies:
     tslib "^1.9.3"
 
